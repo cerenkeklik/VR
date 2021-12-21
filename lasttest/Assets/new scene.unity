@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.4465782, g: 0.49641252, b: 0.5748167, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -611,22 +611,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Delegates:
-  - eventID: 0
-    callback:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 0}
-          m_MethodName: 
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: 
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
+  m_Delegates: []
 --- !u!65 &213484062
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1046,9 +1031,10 @@ GameObject:
   - component: {fileID: 470271391}
   - component: {fileID: 470271390}
   - component: {fileID: 470271389}
+  - component: {fileID: 470271393}
   - component: {fileID: 470271392}
   m_Layer: 0
-  m_Name: Capsule (2)
+  m_Name: law
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1063,7 +1049,7 @@ Transform:
   m_GameObject: {fileID: 470271387}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -0.2, y: 1.0999322, z: -0.08}
-  m_LocalScale: {x: -0.12688413, y: 0.6735, z: 0.101725094}
+  m_LocalScale: {x: -0.5420871, y: 0.6735, z: 0.101725094}
   m_Children: []
   m_Father: {fileID: 1310250290}
   m_RootOrder: 0
@@ -1100,7 +1086,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 7e1dc065a0db82f40bc80a8046ccb9d8, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1138,20 +1124,33 @@ MonoBehaviour:
   m_GameObject: {fileID: 470271387}
   m_Enabled: 1
   m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b36b11b7152d1f041b1c50eb43b4114e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  eng: {fileID: 2624198322530260180, guid: 274992815c65a304991f86fc3d340525, type: 3}
+--- !u!114 &470271393
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 470271387}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_Delegates:
-  - eventID: 0
+  - eventID: 4
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 0}
-          m_MethodName: 
+        - m_Target: {fileID: 470271392}
+          m_MethodName: testM
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: 
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
             m_IntArgument: 0
             m_FloatArgument: 0
             m_StringArgument: 
@@ -2878,10 +2877,11 @@ GameObject:
   - component: {fileID: 1122444319}
   - component: {fileID: 1122444318}
   - component: {fileID: 1122444317}
-  - component: {fileID: 1122444320}
   - component: {fileID: 1122444321}
+  - component: {fileID: 1122444322}
+  - component: {fileID: 1122444320}
   m_Layer: 0
-  m_Name: Capsule (1)
+  m_Name: dent
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2896,7 +2896,7 @@ Transform:
   m_GameObject: {fileID: 1122444315}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0.07000017, y: 1.0220001, z: 0.15}
-  m_LocalScale: {x: -0.12688413, y: 0.6257815, z: 0.101725094}
+  m_LocalScale: {x: -0.6230011, y: 0.6257815, z: 0.101725094}
   m_Children: []
   m_Father: {fileID: 213484060}
   m_RootOrder: 0
@@ -2933,7 +2933,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 7e1dc065a0db82f40bc80a8046ccb9d8, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2971,25 +2971,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1122444315}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Script: {fileID: 11500000, guid: 099cd286301b8b34ea4ec8cd1dddf1e2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Delegates:
-  - eventID: 0
-    callback:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 0}
-          m_MethodName: 
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: 
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
+  eng: {fileID: 7653523656065488611, guid: 96f6deefaa9ac84488504a7971e83393, type: 3}
 --- !u!136 &1122444321
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -3001,9 +2986,37 @@ CapsuleCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   m_Radius: 0.50000006
-  m_Height: 2.0000467
+  m_Height: 2.0264688
   m_Direction: 1
-  m_Center: {x: -0, y: 0.000023494591, z: 0}
+  m_Center: {x: -0, y: 0.013234186, z: 0}
+--- !u!114 &1122444322
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1122444315}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 4
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1122444320}
+          m_MethodName: testM
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1001 &1145209118
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3182,22 +3195,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Delegates:
-  - eventID: 0
-    callback:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 0}
-          m_MethodName: 
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: 
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
+  m_Delegates: []
 --- !u!65 &1310250292
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3978,8 +3976,9 @@ GameObject:
   - component: {fileID: 1538328232}
   - component: {fileID: 1538328231}
   - component: {fileID: 1538328234}
+  - component: {fileID: 1538328235}
   m_Layer: 0
-  m_Name: Capsule
+  m_Name: Eng
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3994,7 +3993,7 @@ Transform:
   m_GameObject: {fileID: 1538328229}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0.07, y: 1.022, z: -0.309}
-  m_LocalScale: {x: -0.12688412, y: 0.6257815, z: 0.101725094}
+  m_LocalScale: {x: -0.5976369, y: 0.6257815, z: 0.101725094}
   m_Children: []
   m_Father: {fileID: 874953250}
   m_RootOrder: 0
@@ -4031,7 +4030,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 7e1dc065a0db82f40bc80a8046ccb9d8, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -4073,21 +4072,34 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Delegates:
-  - eventID: 0
+  - eventID: 4
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 0}
-          m_MethodName: 
+        - m_Target: {fileID: 1538328235}
+          m_MethodName: testM
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: 
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
             m_IntArgument: 0
             m_FloatArgument: 0
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
+--- !u!114 &1538328235
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1538328229}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c5d221d8d64ced748a79b7a0a420d266, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  eng: {fileID: 7653523656065488611, guid: 96f6deefaa9ac84488504a7971e83393, type: 3}
 --- !u!1 &1542076360
 GameObject:
   m_ObjectHideFlags: 0
